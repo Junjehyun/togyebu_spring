@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="/css/style.css">  <!-- 스타일시트 링크 -->
 </head>
 <body>
-    {{> header}}  <!-- header.mustache 템플릿 삽입 -->
+    {{> layouts/header}}  <!-- header.mustache 템플릿 삽입 -->
 
     <main>
         {{> body}}  <!-- 페이지별 본문 내용이 여기에 삽입됨 -->
     </main>
 
-    {{> footer}}  <!-- footer.mustache 템플릿 삽입 -->
+    {{> layouts/footer}}  <!-- footer.mustache 템플릿 삽입 -->
 </body>
 </html>

@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     // Main page method
-    @GetMapping("/")
+    @GetMapping("/main")
     public String mainIndex() {
 
-        return "index";
+        return "main";
 
     }
 }

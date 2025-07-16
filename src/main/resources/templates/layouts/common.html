@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <!--Thymeleaf Layout Dialect-->
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <!--Bootstrap CDN-->
@@ -9,10 +8,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title layout:title="${title}">Togye</title>
+     <title layout:fragment="title">[togye]</title>
 </head>
 <body>
-    <header class="text-black-100 fw-bold text-center bg-light text-5xl p-4" layout:fragment="header">
+    <header class="text-black-100 fw-bold text-center bg-primary text-5xl p-4" layout:fragment="header">
         <h1>togye</h1>
     </header>
 
@@ -20,7 +19,7 @@
         <!--각 페이지 컨텐츠 입력-->
     </div>
 
-    <footer class="bg-light text-black-50 text-center text-xl py-2 fixed-bottom" layout:fragment="footer">
+    <footer class="bg-primary text-black-50 text-center text-xl py-2 fixed-bottom" layout:fragment="footer">
         &copy; <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}"></span> Togye System. All rights reserved.
     </footer>
 </body>

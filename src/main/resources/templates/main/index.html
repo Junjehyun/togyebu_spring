@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/common}">
+ <head>
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">MAIN</title>
 </head>
 <body>
-    aaaa
+    <div layout:fragment="content">
+        abcd
+    </div>
 </body>
-</html>
